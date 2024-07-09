@@ -17,8 +17,6 @@ const Toast = Swal.mixin({
 })
 
 
-
-
 document.getElementById("basic").addEventListener("click", (e) => {
   Swal2.fire("Any fool can use a computer")
 })
