@@ -7,8 +7,12 @@ use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use Yajra\DataTables\Facades\DataTables;
 
-Route::middleware(['auth', 'verify'])->prefix('admin')->group(function () {
-    Route::get('/dashboard', AdminDashboardController::class)->name('dashboard');
+Route::get('/', function() {
+    return redirect()->route('dashboard');
+});
+
+Route::middleware(['auth', 'verified'])->prefix('admin')->group(function () {
+    Route::get('/', AdminDashboardController::class)->name('dashboard');
     Route::get('/user', function () {
 
         if (request()->ajax()) {
@@ -21,6 +25,7 @@ Route::middleware(['auth', 'verify'])->prefix('admin')->group(function () {
 
     })->name('user');
 
+    Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 });
 
 Route::middleware('guest')->group(function () {

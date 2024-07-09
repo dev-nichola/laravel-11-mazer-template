@@ -4,6 +4,10 @@
     </div>
 
     <div>
-        <button class="btn btn-danger">Logout</button>
+        <form action="{{ route('logout') }}" method="POST">
+            @csrf
+            @method('POST')
+            <button type="submit" class="btn btn-danger">Logout</button>
+        </form>
     </div>
 </div>
