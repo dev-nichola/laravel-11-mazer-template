@@ -9,6 +9,8 @@ class AdminDashboardController extends Controller
 {
     public function __invoke()
     {
+
+        request()->ajax();
         return view('admin.dashboard.index');
     }
 }

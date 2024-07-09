@@ -1,17 +1,8 @@
 <x-app-layout>
     <div class="page-content">
-
-        <div class="page-heading d-flex justify-content-between w-100">
-            <div>
-                <h3>{{ __('Dashboard') }}</h3>
-            </div>
-
-            <div>
-                <button class="btn btn-danger">Logout</button>
-            </div>
-        </div>
-
-
+        <x-heading>
+            {{ __("Halaman Dashboard") }}
+        </x-heading>
 
         <section class="row">
             <div class="col-12 col-lg-9">

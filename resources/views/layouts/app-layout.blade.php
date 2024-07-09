@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{-- Csrf Token --}}
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     {{-- Title --}}
     <title>{{ config('app.name') ?? __(' Admin Panel ') }}</title>
@@ -21,6 +24,11 @@
     <link rel="stylesheet" crossorigin href="{{ asset('assets/compiled/css/app-dark.css') }}">
     <link rel="stylesheet" crossorigin href="{{ asset('assets/compiled/css/iconly.css') }}">
 
+    {{-- Datatable --}}
+    <link href="{{ asset('lib/datatable/bootstrap-datatable.css') }}" rel="stylesheet">
+    <script src="{{asset('lib/datatable/jquery.js')}}"></script>
+    <script src="{{ asset('lib/datatable/jquery-datatable.js') }}"></script>
+    <script src="{{ asset('lib/datatable/bootstrap-datatable.js') }}"></script>
 </head>
 
 <body>
