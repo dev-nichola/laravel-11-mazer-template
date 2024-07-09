@@ -8,7 +8,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card py-4 px-4">
-                    <table id="tbl_list" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                    <table id="users_table" class="table table-striped table-bordered" cellspacing="0" width="100%">
                         <thead>
                             <tr>
                                 <th>No</th>
@@ -28,7 +28,7 @@
     @push('scripts')
         <script type="text/javascript">
             $(document).ready(function() {
-                $('#tbl_list').DataTable({
+                $('#users_table').DataTable({
                     processing: true,
                     serverSide: true,
                     ajax: '{{ url()->current() }}',
