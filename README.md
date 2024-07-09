@@ -8,5 +8,5 @@ Digunakan Untuk Kamu Yang Malas Melakukan Slicing Admin Panel
 - Tinggal Memakai - Semua Component Yang Di Perlukan Sudah Di Sediakan
 
 # Work In Progress
-[] Sweet Alert
-[] Authorisasi Laravel Spatie
+- Sweet Alert
+- Authorisasi Laravel Spatie
