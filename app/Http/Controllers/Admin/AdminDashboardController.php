@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 
 class AdminDashboardController extends Controller
 {
@@ -11,6 +10,7 @@ class AdminDashboardController extends Controller
     {
 
         request()->ajax();
+
         return view('admin.dashboard.index');
     }
 }

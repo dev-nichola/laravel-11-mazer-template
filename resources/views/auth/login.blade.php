@@ -2,10 +2,10 @@
     <div class="row h-100">
         <div class="col-lg-5 col-12">
             <div id="auth-left">
-                <h1 class="auth-title">Sign Up</h1>
-                <p class="auth-subtitle mb-5">Input your data to register to our website.</p>
+                <h1 class="auth-title">Log in.</h1>
+                <p class="auth-subtitle mb-5">Log in with your data that you entered during registration.</p>
 
-                <form action="{{ route('register') }}" method="POST">
+                <form action="{{ route('login') }}" method="POST">
                     @csrf
                     @method('POST')
                     <div class="form-group position-relative has-icon-left mb-4">
