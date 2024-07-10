@@ -8,7 +8,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card py-4 px-4">
-                    <table id="users_table" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                    <table id="users_table" class="table table-bordered" cellspacing="0" width="100%">
                         <thead>
                             <tr>
                                 <th>No</th>
